@@ -35,4 +35,3 @@
 
 def playstep2(hand, dice):
 	# your code goes here
-	pass
