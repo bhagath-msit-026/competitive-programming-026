@@ -35,3 +35,24 @@
 
 def playstep2(hand, dice):
 	# your code goes here
+	num=set(str(hand))
+
+	if len(num)==1:
+		return (hand,dice)
+
+	elif(len(num)!=2):
+		dice=str(dice)
+		hand=str(hand)
+		str_res=max(hand)+dice[-2:]
+		res = ''.join(sorted(str_res))
+		return (int(res[::-1]),int(dice[0:-2]))
+
+	else:
+		dice=str(dice)
+		hand=str(hand)
+		str_res= dice[-1:]
+		for char in (hand):
+			if hand.count(char)>1:
+				str_res+=char
+		res = ''.join(sorted(str_res))
+		return (int(res[::-1]),int(dice[0:-1]))
