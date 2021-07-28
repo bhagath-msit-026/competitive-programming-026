@@ -17,9 +17,7 @@ def isprime(x):
 def powerfulnumber(x):
     if(x==1):
         return True
-    
     else:
-        
         count=0
         count2=0
         for i in range(2,int(x/2)+1):
@@ -32,11 +30,9 @@ def powerfulnumber(x):
             return False
         elif(count==count2):
             return True
-
     return False
 
 def nthpowerfulnumber(n):
-
     found = 0
     guess = 0
     while (found <= abs(n)):
