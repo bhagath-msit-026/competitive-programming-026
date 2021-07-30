@@ -24,4 +24,4 @@ def isAdditivePrime(n):
         return True
   
     # return prime(sum(n))
-print(isAdditivePrime(98))
+print(isAdditivePrime(97))
