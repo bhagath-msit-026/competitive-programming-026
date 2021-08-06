@@ -25,19 +25,15 @@ def areAnagrams(s1, s2):
             if liststr[i]>liststr[i+1]:
                 liststr[i],liststr[i+1]=liststr[i+1],liststr[i] 
 
-    
         for j in range(0,len(liststr)-1):
             if liststr2[j]>liststr2[j+1]:
                 liststr2[j],liststr2[j+1]=liststr2[j+1],liststr2[j] 
   
-    
         if liststr==liststr2:
             return True
         else:
             return False
     
-   
- 
 # write your test cases here...   
 print(areAnagrams("aba","BAA"))
 
