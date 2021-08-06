@@ -9,4 +9,16 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	pass
+    k=s.lower()
+    h=""
+    p=""
+    for i in k:
+        if (i.isalnum()):
+            h=h+i
+    
+    for j in h:
+        if (h.count(j)==1):
+            p=p+j
+    
+    return ("".join(sorted(p)))
+print(leastfrequentletters("aDq efQ? FB'daf!!!"))
